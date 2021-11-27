@@ -14,7 +14,7 @@
         "outputPath": "/Users/mert/Desktop/CertificateBasedAuth/CerificateAuth/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/mert/.nuget/NuGet/NuGet.Config"
+          "/Users/mert/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -38,6 +38,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.Certificate": {
+              "target": "Package",
+              "version": "[5.0.12, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.6.3, )"

@@ -1,10 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "KtMlKUuXyIg2HT0bUszEopSyQctUk6r2imjQLtFwDYZQVWLXvqWmSouiMeKeG7Gun6nAk6H/wDVLnpH4A9R+4w==",
+  "dgSpecHash": "Y9Iehrmb+50lB8cLP+y9pxFGGlxzr3SOsCc34P5FYTjyNFYWIUZiX32JsqGZTORWYPHxwvbB4j7iRvShq7HUQA==",
   "success": true,
   "projectFilePath": "/Users/mert/Desktop/CertificateBasedAuth/CerificateAuth/CerificateAuth.csproj",
   "expectedPackageFiles": [
+    "/Users/mert/.nuget/packages/microsoft.aspnetcore.authentication.certificate/5.0.12/microsoft.aspnetcore.authentication.certificate.5.0.12.nupkg.sha512",
     "/Users/mert/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "/Users/mert/.nuget/packages/microsoft.extensions.caching.abstractions/5.0.0/microsoft.extensions.caching.abstractions.5.0.0.nupkg.sha512",
+    "/Users/mert/.nuget/packages/microsoft.extensions.caching.memory/5.0.0/microsoft.extensions.caching.memory.5.0.0.nupkg.sha512",
+    "/Users/mert/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/5.0.0/microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+    "/Users/mert/.nuget/packages/microsoft.extensions.logging.abstractions/5.0.0/microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
+    "/Users/mert/.nuget/packages/microsoft.extensions.options/5.0.0/microsoft.extensions.options.5.0.0.nupkg.sha512",
+    "/Users/mert/.nuget/packages/microsoft.extensions.primitives/5.0.0/microsoft.extensions.primitives.5.0.0.nupkg.sha512",
     "/Users/mert/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
     "/Users/mert/.nuget/packages/swashbuckle.aspnetcore/5.6.3/swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
     "/Users/mert/.nuget/packages/swashbuckle.aspnetcore.swagger/5.6.3/swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
