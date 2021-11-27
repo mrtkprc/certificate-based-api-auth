@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.810.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CerificateAuth", "CerificateAuth.csproj", "{A0885448-EA45-43C2-B40D-960367472FBF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A0885448-EA45-43C2-B40D-960367472FBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0885448-EA45-43C2-B40D-960367472FBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0885448-EA45-43C2-B40D-960367472FBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0885448-EA45-43C2-B40D-960367472FBF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BEBFF05C-CBAA-4A5C-9B59-8884F8D8D0A6}
+	EndGlobalSection
+EndGlobal

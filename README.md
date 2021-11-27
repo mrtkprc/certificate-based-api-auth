@@ -1,3 +1,5 @@
+Note: Related medium: https://medium.com/@niteshsinghal85/certificate-based-authentication-in-asp-net-core-web-api-aad37a33d448
+
 # Certificate Base Authentication
 
 ## Create Certificate
@@ -52,7 +54,6 @@ public class CertificateValidationService
 ## Add CertificateValidation Method
 
 ```c#
-
 public static class AuthenticationExtension
     {
         public static void ConfigureAuthetication(this IServiceCollection services)
@@ -86,5 +87,60 @@ public static class AuthenticationExtension
             services.AddAuthorization();
         }
     }
+
+```
+
+Startup.cs configuration
+```c#
+public void ConfigureServices(IServiceCollection services)
+{
+    //Add required Validation Service for certificate based Auth
+    services.AddTransient<CertificateValidationService>();
+    //Add required Validation Service for certificate based Auth
+    services.ConfigureAuthentication();
+    //...
+}
+
+
+public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+{
+        if (env.IsDevelopment())
+        {
+            app.UseDeveloperExceptionPage();
+            app.UseSwagger();
+            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "CerificateAuth v1"));
+        }
+
+        app.UseHttpsRedirection();
+
+        app.UseRouting();
+
+        //Add Authentication Middleware
+        app.UseAuthentication();
+        app.UseAuthorization();
+
+        app.UseEndpoints(endpoints =>
+        {
+            endpoints.MapControllers();
+        });
+}
+
+```
+
+Protect controller with `[Authorize]` attribute.
+
+Client Side:
+
+```c#
+
+using System.Security.Crypthography.X509Certificates;
+var cert = new X509Certificate2(@"dev_cert.pfx","1234");
+handler.ClientCertificates.Add(cert);
+var client = new HttpClient(handler);
+
+var request = new HttpRequestMessage(){
+    RequestUri = new Uri("...../weatherforecast"),
+    Method=HttpMethod.Get,
+}
 
 ```
