@@ -14,7 +14,7 @@
         "outputPath": "/Users/mert/Desktop/CertificateBasedAuth/CerificateAuth/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/mert/.config/NuGet/NuGet.Config"
+          "/Users/mert/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
