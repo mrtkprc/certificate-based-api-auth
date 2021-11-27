@@ -21,6 +21,11 @@ namespace CerificateAuth
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
+                    webBuilder.ConfigureKestrel(options => {
+                        options.ConfigureHttpsDefaults(o => {
+                            o.ClientCertificateMode = Microsoft.AspNetCore.Server.Kestrel.Https.ClientCertificateMode.RequireCertificate;
+                        });
+                    });
                 });
     }
 }
