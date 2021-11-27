@@ -26,6 +26,10 @@ namespace CerificateAuth
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //Add required Validation Service for certificate based Auth
+            services.AddTransient<CertificateValidationService>();
+            //Add required Validation Service for certificate based Auth
+            services.ConfigureAuthentication();
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
@@ -48,6 +52,8 @@ namespace CerificateAuth
 
             app.UseRouting();
 
+            //Add Authentication Middleware
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
